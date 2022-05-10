@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title%}About page{% endblock %}
+
+{% block content1 %}
+<h1>About page</h1>
+<p>
+    This is about page
+</p>
+<form action="/getAge" method="POST">
+     <label name="ageLabel" > Enter Your Age: </label>
+     <input name ="age" /><br><br>
+     <input type="submit" value="getAge" name="getAge" >
+ </form>
+
+
+<h1>Entered Age is: {{age}}</h1>
+{% endblock %}
+
+{% block content2 %}
+<br><br>
+ <form action="/getName" method="POST">
+     <label name="label1" > Enter Your Name: </label>
+     <input name ="user" /><br><br>
+     <input type="submit" value="getName" name="getName">
+ </form>
+
+<h1>Entered Name is: {{name}}</h1>
+{% endblock %}

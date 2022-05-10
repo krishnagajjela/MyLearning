@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body onload="myFunction()">
+	<p id="demo"></p>
+
+    <script>
+    function myFunction() {
+      var height = window.innerHeight;
+      var width = window.innerWidth;
+      var depth = screen.colorDepth;
+      var x = height.toString()+":"+width.toString()+":"+depth.toString();
+      document.getElementById("demo").innerHTML = x;
+    }
+    </script>
+</body>
+
+</html>

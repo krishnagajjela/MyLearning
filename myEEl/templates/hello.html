@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello, World!</title>
+</head>
+<body onload="myFunction()">
+    <form method="POST" action="/process_qtc">
+        <div style="visibility: hidden">
+          <p id="demo" name="getBrowserDetails"></p>
+        </div>
+        <input type="submit" class="block" value="Next" name="Next" />
+
+
+    </form>
+
+    <script>
+    function myFunction() {
+      var height = window.innerHeight;
+      var width = window.innerWidth;
+      var depth = screen.colorDepth;
+      var x = height.toString()+":"+width.toString()+":"+depth.toString();
+      document.getElementById("demo").innerHTML = x;
+    }
+    </script>
+    </body>
+
+</html>
