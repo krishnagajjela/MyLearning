@@ -10,7 +10,7 @@ app2.secret_key = "secret_key123"
 def visits():
     # get the public ip address
     vendor_public_ip_addrs = requests.get('https://ipapi.co/ip/').text
-    print(vendor_public_ip_addrs)
+    print(vendor_public_ip_addrs) #test
     print("Vendor IP Address: ", vendor_public_ip_addrs)
 
     ## getting the hostname by socket.gethostname() method
